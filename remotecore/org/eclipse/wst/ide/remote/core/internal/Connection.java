@@ -10,7 +10,9 @@
  *******************************************************************************/
 package org.eclipse.wst.ide.remote.core.internal;
 
+import java.io.IOException;
 import java.net.Socket;
+
 /**
  * 
  */
@@ -23,12 +25,14 @@ public class Connection {
 	 * 
 	 * @param in inbound socket
 	 * @param out outbound socket
+	 * @throws IOException 
 	 */
-	public Connection(Socket in, Socket out) {
+	public Connection(Socket in, Socket out) throws IOException {
 		this.in = in;
 		this.out = out;
 	}
 
+	
 	/**
 	 * Close the connection.
 	 */

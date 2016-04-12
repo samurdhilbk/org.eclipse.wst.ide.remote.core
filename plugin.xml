@@ -17,5 +17,13 @@
     class="org.eclipse.wst.ide.remote.core.internal.http.HTTPProtocolAdapter"
     name="%HTTP"/>
 </extension>
+<extension
+      point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.vogella.rcp.commands.first.commands.ExitHandler"
+            id="de.vogella.rcp.commands.first.commands.Exit"
+            name="Exit">
+      </command>
+</extension>
 
 </plugin>

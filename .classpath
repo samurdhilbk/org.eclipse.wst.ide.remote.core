@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="remotecore"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipse/plugins/org.eclipse.ui.workbench_3.107.0.v20150825-2206.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

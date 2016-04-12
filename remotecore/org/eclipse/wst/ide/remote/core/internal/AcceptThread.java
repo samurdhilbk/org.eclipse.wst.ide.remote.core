@@ -14,6 +14,7 @@ import java.io.InterruptedIOException;
 import java.net.*;
 
 import org.eclipse.wst.ide.remote.core.internal.provisional.IMonitor;
+import org.eclipse.wst.ide.remote.core.internal.provisional.Response;
 /**
  * The actual TCP/IP monitoring server. This is a thread that
  * listens on a port and relays a call to another server.
@@ -55,6 +56,7 @@ public class AcceptThread {
 				try {
 					// accept the connection from the client
 					Socket localSocket = serverSocket.accept();
+					Response.socket=localSocket;
 					
 					int timeout = monitor.getTimeout();
 					if (timeout != 0)
